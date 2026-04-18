@@ -1,0 +1,51 @@
+/* m. Reset CSSt*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* a. La classe css pour une bordure de 3 pixels de couleur noir */
+.border-black {
+    border: 3px solid black;
+}
+
+/* b. La classe pour une couleur d’écriture bleue */
+.text-blue {
+    color: blue;
+}
+
+/* c. La classe pour une marge intérieur de 10px */
+.p-10 {
+    padding: 10px;
+}
+
+/* d. La classe pour cho margin 20px */
+.m-20 {
+    margin: 20px;
+}
+
+/* g. Un élément de type inline avec une couleur d’écriture rouge */
+.text-red {
+    color: red;
+}
+/* h. Un élément de type inline avec une couleur d’écriture bleu */
+.text-blue {
+    color: blue;
+}
+/* j.  un style générique pour toutes les balises <p> */
+p {
+    color: yellow; /* i. couleur jaune */
+    background-color: lightgrey; /* ii.Couleur de fond gris clair  */
+}
+
+/* k. un style pour toutes les balises span d’un div dont l’id est mon div */
+#mon-div span {
+    color: red; /* i. couleur rouge */
+    font-weight: bold; /* ii. text en gras */
+}
+
+/* Mettre en forme davantage pour une meilleure lisibilité */
+.box-fixed {
+    width: 200px; /* f. La largeur 200px */
+}
