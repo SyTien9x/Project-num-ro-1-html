@@ -6,8 +6,93 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<section>
+    <form action="backend/mon-traitement" method="POST">
+        <button type="submit">Envoyer via POST (Traitement)</button>
+    </form>
+    <br>
+    <form action="backend/get-traitement" method="GET">
+        <button type="submit">Envoyer via GET (Traitement)</button>
+    </form>
+</section>
+
+<section>
+    <form>
+        <label>Requis, max 25 caractères :</label>
+        <input type="text" required maxlength="25" placeholder="Nom...">
+
+        <label>Requis, entre 15 et 30 caractères :</label>
+        <input type="text" required minlength="15" maxlength="30" placeholder="Description longue...">
+
+        <button type="submit">Tester</button>
+    </form>
+</section>
+
+<section>
+    <form>
+        <label>Password requis (max 25) :</label>
+        <input type="password" required maxlength="25">
+        <button type="submit">Valider</button>
+    </form>
+</section>
+
+<section>
+    <form>
+        <label>Nombre minimum 10 :</label>
+        <input type="number" min="10">
+
+        <label>Nombre maximum 15 :</label>
+        <input type="number" max="15">
+
+        <button type="submit">Valider</button>
+    </form>
+</section>
+
+<section>
+    <form action="backend/global" method="POST">
+        <label>Texte (max 25) :</label>
+        <input type="text" required maxlength="25">
+
+        <label>Texte (15-30 chars) :</label>
+        <input type="text" required minlength="15" maxlength="30">
+
+        <label>Password :</label>
+        <input type="password" required maxlength="25">
+
+        <label>Nombre (10 à 15) :</label>
+        <input type="number" min="10" max="15">
+
+        <button type="submit">Envoyer tout</button>
+    </form>
+</section>
+
+<section>
+    <form>
+        <label>Sélection multiple (Ctrl + clic) :</label>
+        <select name="ues_multiple[]" multiple size="4">
+            <option value="ue1">UE1 : Web</option>
+            <option value="ue2">UE2 : Réseaux</option>
+            <option value="ue3">UE3 : Gestion</option>
+            <option value="ue4">UE4 : Mathématiques</option>
+        </select>
+
+        <label>Sélection unique :</label>
+        <select name="ue_unique">
+            <option value="ue1">UE1</option>
+            <option value="ue2">UE2</option>
+            <option value="ue3">UE3</option>
+            <option value="ue4">UE4</option>
+        </select>
+
+        <br>
+        <button type="submit">Enregistrer les choix</button>
+    </form>
+    </br>
+    </br>
+</section>
 
 <header>
+
     <div class="border-black p-10 box-fixed">
     5 journaux plus populaires
     </div>
